@@ -278,7 +278,7 @@ body.dark-theme {
 }
 
 .button__gray {
-  background-color: var(--text-color-lighten);
+  background-color: var(--text-color-p-taka);
   color: var(--title-color);
 }
 
