@@ -83,6 +83,12 @@ img {
 
   color: #F7A518;
 }
+
+.px-2 {
+  position: relative;
+ bottom: 2px;
+
+}
 /*=============== THEME ===============*/
 .change-theme {
   position: absolute;
