@@ -21,6 +21,7 @@
   --text-color: #ffffff;
   --text-color-light: hsl(var(--hue), 8%, 75%);
   --text-color-lighten: hsl(var(--hue), 8%, 92%);
+  --text-color-p-taka: #412739;
   /* --body-color: hsl(var(--hue), 100%, 99%); */
   --body-color: linear-gradient( rgb(15, 15, 15) 0%,  rgba(104, 18, 80, 1) 100%, rgba(0,212,255,1) 100%);
 
@@ -288,7 +289,7 @@ body.dark-theme {
 /*=============== FILTERS TABS===============*/
 .filters__content {
   margin: 2rem 0 2.5rem;
-  background-color: var(--text-color-lighten);
+  background-color: var(--text-color-p-taka);
   padding: .375rem;
   border-radius: .75rem;
   display: flex;
@@ -307,7 +308,7 @@ body.dark-theme {
   font-weight: 500;
   border-radius: .75rem;
   cursor: pointer;
-  background-color: transparent;
+  background-color: #1a0d16;
   transition: .3s;
 }
 
