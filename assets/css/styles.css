@@ -108,7 +108,7 @@ img {
 body.dark-theme {
   --title-color: hsl(var(--hue), 12%, 95%);
   --text-color: hsl(var(--hue), 12%, 75%);
-  --body-color: linear-gradient( rgb(19, 19, 19) 90%,hsl(202, 59%, 33%) );
+  --body-color: linear-gradient( rgb(19, 19, 19) 90%,rgba(104, 18, 80, 1) );
   --container-color: hsl(var(--hue), 24%, 12%);
 }
 
@@ -117,7 +117,7 @@ body.dark-theme {
     the website, in light theme
 ==========*/
 .dark-theme .button__gray {
-  background-color: var(--container-color);
+  background-color: rgb(49, 49, 49);
 }
 
 .dark-theme .button__gray:hover {
@@ -125,7 +125,7 @@ body.dark-theme {
 }
 
 .dark-theme .filters__content {
-  background-color: var(--container-color);
+  background-color: rgb(49, 49, 49);
 }
 
 .dark-theme::-webkit-scrollbar {
@@ -202,7 +202,7 @@ body.dark-theme {
 .profile__profession {
   font-size: var(--smaller-font-size);
   font-weight: 500;
-  color: var(--text-color);
+  color: var(--title-color);
   margin-bottom: 1rem;
 }
 
