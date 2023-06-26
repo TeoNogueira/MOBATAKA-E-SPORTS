@@ -337,15 +337,16 @@ body.dark-theme {
 .projects__modal {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 98.5%;
   bottom: -100%;
   left: 0;
   background: linear-gradient(180deg, 
-              hsla(54, 104%, 40%, .3) 0%, 
-              hsla(54, 24%, 4%, 1) 95%);
+              hsla(38, 104%, 40%, .3) 0%, 
+              hsla(38, 124%, 5%, .1) 95%);
+              
   display: grid;
   align-items: flex-end;
-  padding: 1.5rem 1.25rem;
+  padding: 1.2rem 1.25rem;
   transition: .3s;
 
 }
