@@ -108,7 +108,7 @@ img {
 body.dark-theme {
   --title-color: hsl(var(--hue), 12%, 95%);
   --text-color: hsl(var(--hue), 12%, 75%);
-  --body-color: linear-gradient( rgb(27, 27, 27) 90%,hsl(202, 59%, 33%) );
+  --body-color: linear-gradient( rgb(19, 19, 19) 90%,hsl(202, 59%, 33%) );
   --container-color: hsl(var(--hue), 24%, 12%);
 }
 
