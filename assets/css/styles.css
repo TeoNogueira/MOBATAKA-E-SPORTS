@@ -443,11 +443,11 @@ body.dark-theme {
 ::-webkit-scrollbar {
   width: .6rem;
   border-radius: .5rem;
-  background-color: hsl(var(--hue), 8%, 66%);
+  background-color: hsl(300, 8%, 66%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: hsl(var(--hue), 8%, 54%);
+  background-color: hsl(204, 9%, 44%);
   border-radius: .5rem;
 }
 
