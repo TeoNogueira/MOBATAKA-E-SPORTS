@@ -1,0 +1,213 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --hue: 240;
+  --first-color-md: hsl(var(--hue), 16%, 18%);
+  --first-color-md-alt: hsl(var(--hue), 16%, 12%);
+  --title-color-md: hsl(var(--hue), 8%, 15%);
+  --text-color-md: hsl(var(--hue), 8%, 35%);
+  --body-color-md: hsl(var(--hue), 100%, 99%);
+  --container-color-md: #FFF;
+
+  /*========== Font and typography ==========*/
+  --body-font-md: 'Poppins', sans-serif;
+  --big-font-size-md: 1.5rem;
+  --normal-font-size-md: .938rem;
+
+  /*========== z index ==========*/
+  --z-modal-md: 1000;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size-md: 1.75rem;
+    --normal-font-size-md: 1rem;
+  }
+}
+
+/*=============== BASE ===============*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+button{
+  font-family: var(--body-font-md);
+  font-size: var(--normal-font-size-md);
+}
+
+body{
+  background-color: var(--body-color-md);
+  color: var(--text-color-md);
+  position: relative;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+iframe {
+  width: 100% !important;
+  height: 100% !important;
+  height: 240px !important;
+  border-radius: 0.4rem;
+  width: 340px ;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+
+
+/* img{
+  max-width: 100%;
+  height: auto;
+} */
+
+/*=============== MODAL ===============*/
+.container{
+  /* margin-left: 1rem;
+  margin-right: 1rem; */
+}
+
+.modal{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.modal__button{
+  display: inline-block;
+  background-color: var(--first-color-md);
+  color: #FFF;
+  padding: 1rem 1.25rem;
+  border-radius: 0.2rem;
+  transition: .5s;
+}
+
+/* .modal__button:hover{
+  background-color: var(--first-color-md-alt);
+} */
+
+
+.modal__container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsla(240, 37%, 71%, 0.8);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: flex-end;
+  overflow: hidden;
+  transition: all .3s;
+  z-index: var(--z-modal-md);
+visibility: hidden;
+  opacity: 0;
+
+  /*=== Effect 3 ===*/
+  /* perspective: 1000px; */
+}
+
+.modal__content{
+  position: relative;
+  background-color: var(--container-color-md);
+  text-align: center;
+  padding: 3rem 2rem 2rem;
+  border-radius: 0.2rem;
+  transition: all .6s;
+
+  /*=== Effect 1 ===*/
+  transform: translateY(10%);
+
+  /*=== Effect 2 ===*/
+  /* transform: scale(.5) translateY(10%); */
+
+  /*=== Effect 3 ===*/
+  /* transform: rotateX(65deg) scale(.75) translateY(10%);
+  transform-origin: 50% 100%; */
+}
+
+.modal__img{
+  width: 150px;
+  /* margin-bottom: .75rem; */
+}
+
+.modal__close{
+  display: inline-flex;
+  background-color: var(--first-color-md);
+  border-radius: 0.4rem;
+  color: #FFF;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  cursor: pointer;
+}
+
+.modal__title{
+  font-size: var(--big-font-size-md);
+  color: var(--title-color-md);
+  margin-top: 0.4rem;
+  font-weight: 500;
+}
+
+.modal__description{
+  margin-bottom: 1.5rem;
+}
+
+.modal__button-width{
+  width: 90%;
+}
+
+.modal__button-link{
+  display: block;
+  margin: 1rem auto 0;
+  width: 80px;
+  height: 30px;
+  border-radius: 0.4rem;
+
+  background-color: #ccb;
+  color: var(--first-color-md);
+  font-weight: 500;
+}
+
+/* Show modal */
+.show-modal{
+  /* display: grid; */
+  visibility: visible;
+  opacity: 1;
+}
+
+.show-modal .modal__content{
+  /*=== Effect 1 ===*/
+  transform: translateY(0);
+
+  /*=== Effect 2 ===*/
+  /* transform: scale(1) translateY(0); */
+
+  /*=== Effect 3 ===*/
+  /* transform: rotateX(0) scale(1) translateY(0); */
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (min-width: 326px){
+  .modal__content{
+    margin: auto;
+    width: 420px;
+    border-radius: 0.4rem;
+    /* padding: 1rem 5rem 5rem; */
+  }
+
+  /* .modal__img{
+    width: 170px;
+  } */
+}
+

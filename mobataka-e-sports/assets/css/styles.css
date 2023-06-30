@@ -269,7 +269,11 @@ body.dark-theme {
   transition: .3s;
   box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
 }
-
+.color-03 {
+  box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
+  color: #fff;
+  background: #070707 !important;
+}
 .button i {
   font-size: 1.25rem;
 }
