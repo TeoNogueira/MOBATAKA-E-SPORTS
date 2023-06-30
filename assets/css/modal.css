@@ -82,14 +82,14 @@ iframe {
   place-items: center;
 }
 
-.modal__button{
+/* .modal__button{
   display: inline-block;
   background-color: var(--first-color-md);
   color: #FFF;
   padding: 1rem 1.25rem;
   border-radius: 0.2rem;
   transition: .5s;
-}
+} */
 
 /* .modal__button:hover{
   background-color: var(--first-color-md-alt);
@@ -98,9 +98,9 @@ iframe {
 
 .modal__container{
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
-  background-color: hsla(240, 37%, 71%, 0.8);
+  background-color: hsla(240, 46%, 13%, 0.8);
   width: 100%;
   height: 100%;
   display: grid;
@@ -124,7 +124,7 @@ visibility: hidden;
   transition: all .6s;
 
   /*=== Effect 1 ===*/
-  transform: translateY(10%);
+  transform: translateY(50%);
 
   /*=== Effect 2 ===*/
   /* transform: scale(.5) translateY(10%); */
