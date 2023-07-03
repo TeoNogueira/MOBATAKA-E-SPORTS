@@ -1,31 +1,29 @@
-const mod01 = document.querySelector('.op-01');
-const mod02 = document.querySelector('.op-02');
+// MODAL 1
+const showModal1 = (openButton, modalContent) =>{
+    const openBtn = document.getElementById(openButton),
+    modalContainer = document.getElementById(modalContent)
 
-
-
-
-function setLinks(type) {
-
-const links = {
-
-  link01: ["uDG63MEOxmI"],
-  link02: ["4o5BMp3SY-g"],
-
+    if(openBtn && modalContainer){
+     
+        openBtn.addEventListener('click', (e)=>{
+            e.preventDefault();
+            modalContainer.classList.add('show-modal')
+        })
+    }
 }
+showModal1('open-modal-1','modal-container-1')
 
-mod01.setAttribute('src', `https://www.youtube.com/embed/${links[type][0]}`);
-mod02.setAttribute('src', `https://www.youtube.com/embed/${links[type][1]}`);
+/*=============== CLOSE MODAL ===============*/
+const closeBtn1 = document.querySelectorAll('.close-modal')
 
-
-
-
+function closeModal1(){
+    const modalContainer = document.getElementById('modal-container-1')
+    modalContainer.classList.remove('show-modal')
 }
+closeBtn1.forEach(c => c.addEventListener('click', closeModal1))
 
 
-
-
-
-/*=============== SHOW MODAL ===============*/
+/*=============== SHOW MODAL 2 ===============*/
 const showModal = (openButton, modalContent) =>{
     const openBtn = document.getElementById(openButton),
     modalContainer = document.getElementById(modalContent)
@@ -48,3 +46,28 @@ function closeModal(){
     modalContainer.classList.remove('show-modal')
 }
 closeBtn.forEach(c => c.addEventListener('click', closeModal))
+
+
+/*=============== SHOW MODAL 3 ===============*/
+const showModal3 = (openButton, modalContent) =>{
+    const openBtn = document.getElementById(openButton),
+    modalContainer = document.getElementById(modalContent)
+
+    if(openBtn && modalContainer){
+     
+        openBtn.addEventListener('click', (e)=>{
+            e.preventDefault();
+            modalContainer.classList.add('show-modal')
+        })
+    }
+}
+showModal3('open-modal-3','modal-container-3')
+
+/* CLOSE MODAL 3 */
+const closeBtn3 = document.querySelectorAll('.close-modal')
+
+function closeModal3(){
+    const modalContainer = document.getElementById('modal-container-3')
+    modalContainer.classList.remove('show-modal')
+}
+closeBtn3.forEach(c => c.addEventListener('click', closeModal3))
