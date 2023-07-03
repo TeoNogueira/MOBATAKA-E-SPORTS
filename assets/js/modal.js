@@ -1,3 +1,5 @@
+
+
 // MODAL 1
 const showModal1 = (openButton, modalContent) =>{
     const openBtn = document.getElementById(openButton),
@@ -71,3 +73,6 @@ function closeModal3(){
     modalContainer.classList.remove('show-modal')
 }
 closeBtn3.forEach(c => c.addEventListener('click', closeModal3))
+
+
+
