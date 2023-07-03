@@ -208,8 +208,15 @@ visibility: hidden;
     /* padding: 1rem 5rem 5rem; */
     
 iframe {
-  width: 100% !important;
-  width: 220px !important ;
+  display: flex !important;   
+  position: relative !important;
+  left : 4% !important;
+  height: 200px !important;
+  border-radius: 0.4rem;
+  align-items:center;
+  width: 278px !important;
+ 
+  justify-content: center !important;
  
 }
 
