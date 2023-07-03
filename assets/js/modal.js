@@ -11,7 +11,7 @@ const showModal1 = (openButton, modalContent) =>{
             e.preventDefault();
             modalContainer.classList.add('show-modal')
         })
-    }
+    }   
 }
 showModal1('open-modal-1','modal-container-1')
 
@@ -73,6 +73,8 @@ function closeModal3(){
     modalContainer.classList.remove('show-modal')
 }
 closeBtn3.forEach(c => c.addEventListener('click', closeModal3))
+
+
 
 
 

@@ -3,14 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-        <meta http-equiv="Content-Security-Policy: default-src https://www.youtube.com"  content="frame-src 'self'">
+        <!-- <meta http-equiv="Permissions-Policy" content="interest-cohort=()"> -->
+      
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="assets/img/taka.svg" type="image/x-icon">
         
         <!--=============== REMIX ICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 
         <!--=============== CSS ===============-->
         <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
@@ -262,9 +263,16 @@
                 <div class="modal__close close-modal" title="Close">
                     <i class='bx bx-x'></i>
                 </div>
-
-                <iframe id="v1" allowfullscreen="" class=""  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0" src="https://www.youtube.com/embed/4o5BMp3SY-g"></iframe>
-
+<!-- 
+                <iframe id="v1" allowfullscreen="" class=""  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0" src="https://www.youtube.com/embed/4o5BMp3SY-g"></iframe> -->
+                <div class="plyr__video-embed" id="player">
+                    <iframe
+                      src="https://player.vimeo.com/video/76979871?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+                      allowfullscreen
+                      allowtransparency
+                      allow="autoplay"
+                    ></iframe>
+                  </div>
                 <h1 class="modal__title">Good Job!</h1>
                 <p class="modal__description">Click the button to close</p>
 
@@ -291,7 +299,7 @@
                     <i class='bx bx-x'></i>
                 </div>
 
-                <iframe id="v1" allowfullscreen="" class="op-01" frameborder="0" src="https://www.youtube.com/embed/uDG63MEOxmI"></iframe>
+                <!-- <iframe id="v1" allowfullscreen="" class="op-01"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0" src="https://www.youtube.com/embed/uDG63MEOxmI"></iframe> -->
 
                 <h1 class="modal__title">Good Job!</h1>
                 <p class="modal__description">Click the button to close</p>
@@ -318,7 +326,7 @@
                     <i class='bx bx-x'></i>
                 </div>
 
-                <iframe id="v1" allowfullscreen="" class="op-01" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0" src="https://www.youtube.com/embed/uDG63MEOxmI"></iframe>
+                <!-- <iframe id="v1" allowfullscreen="" class="op-01" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0" src="https://www.youtube.com/embed/uDG63MEOxmI"></iframe> -->
 
                 <h1 class="modal__title">Good Job!</h1>
                 <p class="modal__description">Click the button to close</p>
@@ -345,5 +353,6 @@
 
         <!--=============== MAIN JS ===============-->
         <script type="module" src="assets/js/main.js"></script>
+        <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
     </body>
 </html>
