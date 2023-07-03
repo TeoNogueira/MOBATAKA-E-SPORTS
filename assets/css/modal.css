@@ -58,7 +58,7 @@ iframe {
   height: 100% !important;
   height: 240px !important;
   border-radius: 0.4rem;
-  width: 340px ;
+  width: 360px ;
   display: flex !important;
   justify-content: center !important;
 }
@@ -198,12 +198,23 @@ visibility: hidden;
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (min-width: 326px){
+@media screen and (min-width: 375px){
   .modal__content{
     margin: auto;
-    width: 420px;
+    width: 360px;
     border-radius: 0.4rem;
     /* padding: 1rem 5rem 5rem; */
+    
+iframe {
+  width: 100% !important;
+  width: 220px !important ;
+ 
+}
+
+.ytp-large-play-button .ytp-button .ytp-large-play-button-red-bg {
+
+  background: #babada !important;
+}
   }
 
   /* .modal__img{
