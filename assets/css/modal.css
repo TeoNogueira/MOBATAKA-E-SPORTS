@@ -54,12 +54,14 @@ button{
 }
 
 iframe {
-  width: 100% !important;
-  height: 100% !important;
-  height: 240px !important;
+  display: flex !important;   
+  position: relative !important;
+  left : 4% !important;
+  height: 200px !important;
   border-radius: 0.4rem;
-  width: 360px ;
-  display: flex !important;
+  align-items:center;
+  width: 278px !important;
+ 
   justify-content: center !important;
 }
 
@@ -202,7 +204,7 @@ visibility: hidden;
   .modal__content{
     margin: auto;
     width: 360px;
-    border-radius: 0.4rem;
+    /* border-radius: 0.4rem; */
     /* padding: 1rem 5rem 5rem; */
     
 iframe {
