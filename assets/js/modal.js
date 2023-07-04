@@ -74,6 +74,33 @@ function closeModal3(){
 }
 closeBtn3.forEach(c => c.addEventListener('click', closeModal3))
 
+/*=============== SHOW MODAL 4 ===============*/
+const showModal4 = (openButton, modalContent) =>{
+    const openBtn = document.getElementById(openButton),
+    modalContainer = document.getElementById(modalContent)
+
+    if(openBtn && modalContainer){
+     
+        openBtn.addEventListener('click', (e)=>{
+            e.preventDefault();
+            modalContainer.classList.add('show-modal')
+        })
+    }
+}
+showModal4('open-modal-4','modal-container-4')
+
+/* CLOSE MODAL 3 */
+const closeBtn4 = document.querySelectorAll('.close-modal')
+
+function closeModal4(){
+    const modalContainer = document.getElementById('modal-container-4')
+    modalContainer.classList.remove('show-modal')
+}
+closeBtn4.forEach(c => c.addEventListener('click', closeModal4))
+
+
+
+
 
 
 
