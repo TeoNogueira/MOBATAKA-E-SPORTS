@@ -4,12 +4,12 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
-  --hue: 240;
-  --first-color-md: hsl(var(--hue), 16%, 18%);
-  --first-color-md-alt: hsl(var(--hue), 16%, 12%);
-  --title-color-md: hsl(var(--hue), 8%, 15%);
-  --text-color-md: hsl(var(--hue), 8%, 35%);
-  --body-color-md: hsl(var(--hue), 100%, 99%);
+  --hue-md: 240;
+  --first-color-md: hsl(var(--hue-md), 16%, 18%);
+  --first-color-md-alt: hsl(var(--hue-md), 16%, 12%);
+  --title-color-md: hsl(var(--hue-md), 8%, 15%);
+  --text-color-md: hsl(var(--hue-md), 8%, 35%);
+  --body-color-md: hsl(var(--hue-md), 100%, 99%);
   --container-color-md: #FFF;
 
   /*========== Font and typography ==========*/
@@ -29,11 +29,6 @@
 }
 
 /*=============== BASE ===============*/
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 
 body,
 button{
@@ -107,8 +102,24 @@ visibility: hidden;
 
   /*=== Effect 1 ===*/
   transform: translateY(50%);
+}
 
- 
+.md-p-1 {
+  bottom: 150px !important;
+}
+.md-p-2 {
+  top: 120px !important;
+}
+
+.md-p-3 {
+  top: 360px !important;
+}
+.md-p-4 {
+  top: 620px !important;
+}
+
+.md-p-5 {
+  top: 700px !important;
 }
 
 .modal__img{
