@@ -37,8 +37,8 @@ button{
 }
 
 body{
-  background-color: var(--body-color-md);
-  color: var(--text-color-md);
+  /* background-color: var(--body-color-md);
+  color: var(--text-color-md); */
   position: relative;
 }
 
