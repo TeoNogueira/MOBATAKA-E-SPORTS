@@ -198,6 +198,8 @@ body.dark-theme {
 
 .profile__name {
   font-size: var(--h2-font-size);
+  position: relative;
+  left: 8px;
 }
 
 .profile__profession {
