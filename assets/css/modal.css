@@ -119,9 +119,12 @@ visibility: hidden;
 }
 
 .md-p-5 {
-  top: 700px !important;
+  top: 650px !important;
 }
 
+p.quantity {
+  color: var(--black-color);
+}
 .modal__img{
   width: 150px;
   /* margin-bottom: .75rem; */

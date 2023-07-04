@@ -22,6 +22,7 @@
   --text-color-light: hsl(var(--hue), 8%, 75%);
   --text-color-lighten: hsl(var(--hue), 8%, 92%);
   --text-color-p-taka: #412739;
+  --black-color: #000;
   /* --body-color: hsl(var(--hue), 100%, 99%); */
   --body-color: linear-gradient( rgb(15, 15, 15) 0%,  rgba(104, 18, 80, 1) 100%, rgba(0,212,255,1) 100%);
 
