@@ -202,6 +202,12 @@ body.dark-theme {
   left: 8px;
 }
 
+.taka-svg {
+  position: relative;
+  top: 3px;
+
+}
+
 .profile__profession {
   font-size: var(--smaller-font-size);
   font-weight: 500;
