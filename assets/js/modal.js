@@ -89,7 +89,7 @@ const showModal4 = (openButton, modalContent) =>{
 }
 showModal4('open-modal-4','modal-container-4')
 
-/* CLOSE MODAL 3 */
+/* CLOSE MODAL 4 */
 const closeBtn4 = document.querySelectorAll('.close-modal')
 
 function closeModal4(){
@@ -97,6 +97,36 @@ function closeModal4(){
     modalContainer.classList.remove('show-modal')
 }
 closeBtn4.forEach(c => c.addEventListener('click', closeModal4))
+
+
+/*=============== SHOW MODAL 5 ===============*/
+const showModal5 = (openButton, modalContent) =>{
+    const openBtn = document.getElementById(openButton),
+    modalContainer = document.getElementById(modalContent)
+
+    if(openBtn && modalContainer){
+     
+        openBtn.addEventListener('click', (e)=>{
+            e.preventDefault();
+            modalContainer.classList.add('show-modal')
+        })
+    }
+}
+showModal5('open-modal-5','modal-container-5')
+
+/* CLOSE MODAL 5 */
+const closeBtn5 = document.querySelectorAll('.close-modal')
+
+function closeModal5(){
+    const modalContainer = document.getElementById('modal-container-5')
+    modalContainer.classList.remove('show-modal')
+}
+closeBtn5.forEach(c => c.addEventListener('click', closeModal5))
+
+
+
+
+
 
 
 
