@@ -56,7 +56,7 @@ button{
 iframe {
   display: flex !important;   
   position: relative !important;
-  left : 4% !important;
+  left : -8.4% !important;
   height: 200px !important;
   border-radius: 0.4rem;
   align-items:center;
@@ -67,16 +67,8 @@ iframe {
 
 
 
-/* img{
-  max-width: 100%;
-  height: auto;
-} */
-
 /*=============== MODAL ===============*/
-.container{
-  /* margin-left: 1rem;
-  margin-right: 1rem; */
-}
+
 
 .modal{
   height: 100vh;
@@ -84,18 +76,6 @@ iframe {
   place-items: center;
 }
 
-/* .modal__button{
-  display: inline-block;
-  background-color: var(--first-color-md);
-  color: #FFF;
-  padding: 1rem 1.25rem;
-  border-radius: 0.2rem;
-  transition: .5s;
-} */
-
-/* .modal__button:hover{
-  background-color: var(--first-color-md-alt);
-} */
 
 
 .modal__container{
@@ -128,12 +108,7 @@ visibility: hidden;
   /*=== Effect 1 ===*/
   transform: translateY(50%);
 
-  /*=== Effect 2 ===*/
-  /* transform: scale(.5) translateY(10%); */
-
-  /*=== Effect 3 ===*/
-  /* transform: rotateX(65deg) scale(.75) translateY(10%);
-  transform-origin: 50% 100%; */
+ 
 }
 
 .modal__img{
@@ -191,27 +166,22 @@ visibility: hidden;
   /*=== Effect 1 ===*/
   transform: translateY(0);
 
-  /*=== Effect 2 ===*/
-  /* transform: scale(1) translateY(0); */
-
-  /*=== Effect 3 ===*/
-  /* transform: rotateX(0) scale(1) translateY(0); */
+ 
 }
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (min-width: 375px){
+@media screen and (min-width: 320px){
   .modal__content{
     margin: auto;
-    width: 360px;
-    /* border-radius: 0.4rem; */
-    /* padding: 1rem 5rem 5rem; */
+    width: 300px;
+   
     
 iframe {
-  display: flex !important;   
-  position: relative !important;
-  left : 4% !important;
-  height: 200px !important;
+  display: flex !important; 
+  width: 100% !important;  
+  right : 15% !important;
+  height: 190px !important;
   border-radius: 0.4rem;
   align-items:center;
   width: 278px !important;
@@ -220,14 +190,8 @@ iframe {
  
 }
 
-.ytp-large-play-button .ytp-button .ytp-large-play-button-red-bg {
 
-  background: #babada !important;
-}
   }
 
-  /* .modal__img{
-    width: 170px;
-  } */
+ 
 }
-
