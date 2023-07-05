@@ -176,8 +176,8 @@ p.quantity {
   }
   .md-p-2 {
     top: 120px !important;
-    background: url('../img/prism_2.svg') bottom !important;
-    background-size: cover revert;
+    background: url('../img/prism_1.svg') bottom !important;
+    background-size: cover;
     /* height: 700px; */
  
    
@@ -185,13 +185,19 @@ p.quantity {
   
   .md-p-3 {
     top: 360px !important;
+    background: url('../img/prism_1.svg') bottom !important;
+    background-size: cover;
   }
   .md-p-4 {
     top: 620px !important;
+    background: url('../img/prism_1.svg') bottom !important;
+    background-size: cover;
   }
   
   .md-p-5 {
     top: 650px !important;
+    background: url('../img/prism_1.svg') bottom !important;
+    background-size: cover;
   }
 
 }
