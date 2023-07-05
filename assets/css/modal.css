@@ -110,7 +110,7 @@ visibility: hidden;
 
 
 p.quantity {
-  color: var(--black-color);
+  color: var(--text-color);
 }
 
 
@@ -128,7 +128,7 @@ p.quantity {
 
 .modal__title{
   font-size: var(--big-font-size-md);
-  color: var(--title-color-md);
+  color: var(--text-color);
   margin-top: 0.4rem;
   font-weight: 500;
 }
@@ -144,13 +144,18 @@ p.quantity {
 .modal__button-link{
   display: block;
   margin: 1rem auto 0;
-  width: 80px;
-  height: 30px;
+  width: 70px;
+  height: 28px;
   border-radius: 0.4rem;
-
+  opacity: 0.8;
   background-color: #ccb;
   color: var(--first-color-md);
   font-weight: 500;
+}
+
+.modal__button-link:hover {
+  opacity: 1;
+  
 }
 
 /* Show modal */
@@ -166,6 +171,34 @@ p.quantity {
 
  
 }
+.md-p-1 {
+ 
+  background: url('../img/prism_1.svg') left;
+  background-size: cover;
+}
+.md-p-2 {
+ 
+  background: url('../img/prism_1.svg') left;
+  background-size: cover;
+}
+.md-p-3 {
+ 
+  background: url('../img/prism_1.svg') left;
+  background-size: cover;
+}
+.md-p-4 {
+ 
+  background: url('../img/prism_1.svg') left;
+  background-size: cover;
+}
+.md-p-5 {
+ 
+  background: url('../img/prism_1.svg') left;
+  background-size: cover;
+}
+
+
+
 @media screen and (max-width: 768px){ 
 
 
