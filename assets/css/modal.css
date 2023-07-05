@@ -116,7 +116,7 @@ p.quantity {
 
 .modal__close{
   display: inline-flex;
-  background-color: var(--first-color-md);
+  /* background-color: var(--first-color-md); */
   border-radius: 0.4rem;
   color: #FFF;
   font-size: 1.1rem;
