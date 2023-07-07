@@ -20,6 +20,10 @@
     background-size: cover;
 }
 
+.lane, .cd h1, .about-me, .image-top, .profile-image {
+    user-select: none;
+}
+
 @keyframes cdAnim {
     0% {opacity: 0}
     100% {opacity: 1}
@@ -89,7 +93,7 @@
     font-size: 22px;
     color: #FFF;
     margin: 10px;
-    user-select: none;
+   
    
 }
 
@@ -97,7 +101,7 @@
     font-family: 'Montserrat', sans-serif;
     color: #ffffffc7;
     font-weight: 300;
-    user-select: none;
+   
 }
 
 .about-me {
