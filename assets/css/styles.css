@@ -171,6 +171,7 @@ body.dark-theme {
 .profile__perfil {
   width: 100px;
   height: 100px;
+  
   background: linear-gradient(180deg, 
               hsla(var(--hue), var(--sat), var(--lig), 1) 0%, 
               hsla(var(--hue), var(--sat), var(--lig), .2) 100%);
@@ -235,6 +236,7 @@ body.dark-theme {
   grid-template-columns: repeat(3, max-content);
   justify-content: center;
   column-gap: 2.5rem;
+  padding-left: 12px;
 }
 
 .profile__info-group {
