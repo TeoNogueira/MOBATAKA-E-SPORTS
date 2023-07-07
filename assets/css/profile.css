@@ -89,13 +89,15 @@
     font-size: 22px;
     color: #FFF;
     margin: 10px;
+    user-select: none;
    
 }
 
-.job {
+.lane {
     font-family: 'Montserrat', sans-serif;
     color: #ffffffc7;
     font-weight: 300;
+    user-select: none;
 }
 
 .about-me {
@@ -106,6 +108,7 @@
     font-style: italic;
     color: #ffffff;
     text-align: center;
+    user-select: none;
 }
 
 .cd button {
