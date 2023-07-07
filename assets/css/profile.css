@@ -72,13 +72,13 @@
 .cd h1 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 22px;
-    color: #555;
+    color: #FFF;
     margin: 10px;
 }
 
 .job {
     font-family: 'Montserrat', sans-serif;
-    color: #777;
+    color: #ffffffc7;
     font-weight: 300;
 }
 
@@ -88,7 +88,7 @@
     width: 90%;
     margin: 15px 0;
     font-style: italic;
-    color: #444;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -96,7 +96,7 @@
     width: 120px;
     padding: 7px;
     margin: 10px 0;
-    background-color: tomato;
+    background-color: #260f2c;
     border: none;
     outline: none;
     border-radius: 25px;
@@ -148,16 +148,20 @@
 }
 
 .fa-facebook-f {
-    color: #3b5999;
+    /* color: #3b5999; */
+    color: #fff;
 }
 .fa-youtube {
-    color: #cd201f;
+    /* color: #cd201f; */
+    color: #fff;
 }
 .fa-twitter {
-    color: #55acee;
+    /* color: #55acee; */
+    color: #fff;
 }
 .fa-google-plus-g {
-    color: #dd4b39;
+    /* color: #dd4b39; */
+    color: #fff;
 }
 
 @media(max-width: 1300px) {
