@@ -16,6 +16,8 @@
     justify-content: center ;
     transition: transform .5s;
     border-radius: 0.7rem 0.7rem 0.4rem 0.5rem;
+    background: url('../img/prism_1.svg') left;
+    background-size: cover;
 }
 
 @keyframes cdAnim {
@@ -24,16 +26,25 @@
 }
 
 .cd:nth-child(1) {
-    animation: cdAnim 2s 3s backwards;
+    animation: cdAnim 1s 2s backwards;
 }
 
 .cd:nth-child(2) {
-    animation: cdAnim 2s 3.5s backwards;
+    animation: cdAnim 1s 3s backwards;
 }
 
 .cd:nth-child(3) {
-    animation: cdAnim 2s 4s backwards;
+    animation: cdAnim 1s 4s backwards;
 }
+
+.cd:nth-child(4) {
+    animation: cdAnim 1s 5s backwards;
+}
+
+.cd:nth-child(5) {
+    animation: cdAnim 1s 6s backwards;
+}
+
 
 .cd:hover {
     transform: scale(1.1);
@@ -43,7 +54,7 @@
     width: 100%;
     height: 220px;
     object-fit: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+    clip-path: polygon(0 0, 108% 0, 100% 76%, 0% 100%);
     border-radius: 0.4rem 0.4rem 0 0;
 
 }
