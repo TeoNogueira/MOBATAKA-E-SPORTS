@@ -26,29 +26,30 @@
 }
 
 .cd:nth-child(1) {
-    animation: cdAnim 1s 2s backwards;
+    animation: cdAnim 4s 0.9s backwards;
 }
 
 .cd:nth-child(2) {
-    animation: cdAnim 1s 3s backwards;
+    animation: cdAnim 4s 1.2s backwards;
 }
 
 .cd:nth-child(3) {
-    animation: cdAnim 1s 4s backwards;
+    animation: cdAnim 4s 1.3s backwards;
 }
 
 .cd:nth-child(4) {
-    animation: cdAnim 1s 5s backwards;
+    animation: cdAnim 4s 1.4s backwards;
 }
 
 .cd:nth-child(5) {
-    animation: cdAnim 1s 6s backwards;
+    animation: cdAnim 4s 1.5s backwards;
 }
-
 
 .cd:hover {
     transform: scale(1.1);
+    
 }
+
 
 .image-top {
     width: 100%;
@@ -58,7 +59,20 @@
     border-radius: 0.4rem 0.4rem 0 0;
 
 }
+.relative {
+    position: relative;
+}
+.b-gold {
+    right: 5px;
+    position: absolute;
+    color: #F7A518;
+}
 
+.b-blue {
+    right: 5px;
+    position: absolute;
+    color: #12829A;
+}
 .profile-image {
     width: 120px;
     height: 120px;
@@ -70,10 +84,12 @@
 }
 
 .cd h1 {
+   
     font-family: 'Ubuntu', sans-serif;
     font-size: 22px;
     color: #FFF;
     margin: 10px;
+   
 }
 
 .job {
@@ -103,11 +119,15 @@
     font-family: 'Josefin Sans', sans-serif;
     color: #eee;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, .4);
+    
 }
 
 .cd:hover button {
     animation: buttonRotation 2s 1s linear;
+    
 }
+
+
 
 @keyframes buttonRotation {
     0% {transform: scale(1) rotateZ(0)}

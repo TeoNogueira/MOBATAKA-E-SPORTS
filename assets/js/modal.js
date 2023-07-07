@@ -124,6 +124,24 @@ function closeModal5(){
 closeBtn5.forEach(c => c.addEventListener('click', closeModal5))
 
 
+// mouseOver
+
+const adminClan = document.querySelector('.cd:nth-child(1)')
+
+adminClan.addEventListener('mouseover', (e) => {
+
+    e.preventDefault();
+    document.querySelector('.cd button').style.color = '#F7A518';
+    // document.querySelector('.cd button').style.transition = 'transform 2.5s';
+
+    adminClan.addEventListener('mouseout', (e) => {
+
+        e.preventDefault();
+        document.querySelector('.cd button').style.color = '#eee';
+       
+    })
+})
+
 
 
 
