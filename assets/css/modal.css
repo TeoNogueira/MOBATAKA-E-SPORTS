@@ -1,9 +1,7 @@
-/*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-/*=============== VARIABLES CSS ===============*/
 :root {
-  /*========== Colors ==========*/
+ 
   --hue-md: 240;
   --first-color-md: hsl(var(--hue-md), 16%, 18%);
   --first-color-md-alt: hsl(var(--hue-md), 16%, 12%);
@@ -17,7 +15,6 @@
   --big-font-size-md: 1.5rem;
   --normal-font-size-md: .938rem;
 
-  /*========== z index ==========*/
   --z-modal-md: 1000;
 }
 
@@ -28,7 +25,6 @@
   }
 }
 
-/*=============== BASE ===============*/
 
 body,
 button{
@@ -37,8 +33,6 @@ button{
 }
 
 body{
-  /* background-color: var(--body-color-md);
-  color: var(--text-color-md); */
   position: relative;
 }
 
@@ -66,16 +60,11 @@ iframe {
   height: 100%;
 }
 
-/*=============== MODAL ===============*/
-
-
 .modal{
   height: 100vh;
   display: grid;
   place-items: center;
 }
-
-
 
 .modal__container{
   position: absolute;
@@ -92,8 +81,6 @@ iframe {
 visibility: hidden;
   opacity: 0;
 
-  /*=== Effect 3 ===*/
-  /* perspective: 1000px; */
 }
 
 .modal__content{
@@ -113,10 +100,8 @@ p.quantity {
   color: var(--text-color);
 }
 
-
 .modal__close{
   display: inline-flex;
-  /* background-color: var(--first-color-md); */
   border-radius: 0.4rem;
   color: #FFF;
   font-size: 1.1rem;
@@ -160,7 +145,7 @@ p.quantity {
 
 /* Show modal */
 .show-modal{
-  /* display: grid; */
+
   visibility: visible;
   opacity: 1;
 }
@@ -197,8 +182,6 @@ p.quantity {
   background-size: cover;
 }
 
-
-
 @media screen and (max-width: 768px){ 
 
 
@@ -211,8 +194,6 @@ p.quantity {
     top: 120px !important;
     background: url('../img/prism_1.svg') bottom !important;
     background-size: cover;
-    /* height: 700px; */
- 
    
   }
   
@@ -236,14 +217,11 @@ p.quantity {
 }
 
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
 @media screen and (min-width: 320px){
   .modal__content{
     margin: auto;
     width: 300px;
-   
-    
+      
 iframe {
   display: flex !important; 
   width: 100% !important;  
@@ -256,9 +234,5 @@ iframe {
   justify-content: center !important;
  
 }
-
-
   }
-
- 
 }
