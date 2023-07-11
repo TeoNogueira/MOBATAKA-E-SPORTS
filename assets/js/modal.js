@@ -1,127 +1,36 @@
+// Modal
 
-
-// MODAL 1
-const showModal1 = (openButton, modalContent) =>{
-    const openBtn = document.getElementById(openButton),
-    modalContainer = document.getElementById(modalContent)
-
-    if(openBtn && modalContainer){
-     
-        openBtn.addEventListener('click', (e)=>{
-            e.preventDefault();
-            modalContainer.classList.add('show-modal')
-        })
-    }   
-}
-showModal1('open-modal-1','modal-container-1')
-
-/*=============== CLOSE MODAL ===============*/
-const closeBtn1 = document.querySelectorAll('.close-modal')
-
-function closeModal1(){
-    const modalContainer = document.getElementById('modal-container-1')
-    modalContainer.classList.remove('show-modal')
-}
-closeBtn1.forEach(c => c.addEventListener('click', closeModal1))
-
-
-/*=============== SHOW MODAL 2 ===============*/
-const showModal = (openButton, modalContent) =>{
-    const openBtn = document.getElementById(openButton),
-    modalContainer = document.getElementById(modalContent)
-
-    if(openBtn && modalContainer){
-     
-        openBtn.addEventListener('click', (e)=>{
-            e.preventDefault();
-            modalContainer.classList.add('show-modal')
-        })
+const showModal = (openButtonId, modalContentId) => {
+    const openBtn = document.getElementById(openButtonId);
+    const modalContainer = document.getElementById(modalContentId);
+  
+    if (openBtn && modalContainer) {
+      openBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        modalContainer.classList.add('show-modal');
+      });
     }
-}
-showModal('open-modal','modal-container')
+  
+    const closeBtn = modalContainer.querySelectorAll('.close-modal');
+    closeBtn.forEach((c) => c.addEventListener('click', () => closeModal(modalContentId)));
+  };
+  
+  // Função genérica para fechar um modal
+  const closeModal = (modalContentId) => {
+    const modalContainer = document.getElementById(modalContentId);
+    modalContainer.classList.remove('show-modal');
+  };
+  
+  // Chamar a função showModal para cada modal
+  
 
-/*=============== CLOSE MODAL ===============*/
-const closeBtn = document.querySelectorAll('.close-modal')
+  showModal('open-modal-1', 'modal-container-1');
+  showModal('open-modal', 'modal-container');
+  showModal('open-modal-3', 'modal-container-3');
+  showModal('open-modal-4', 'modal-container-4');
+  showModal('open-modal-5', 'modal-container-5');
+  showModal('open-modal-6', 'modal-container-6');
 
-function closeModal(){
-    const modalContainer = document.getElementById('modal-container')
-    modalContainer.classList.remove('show-modal')
-}
-closeBtn.forEach(c => c.addEventListener('click', closeModal))
-
-
-/*=============== SHOW MODAL 3 ===============*/
-const showModal3 = (openButton, modalContent) =>{
-    const openBtn = document.getElementById(openButton),
-    modalContainer = document.getElementById(modalContent)
-
-    if(openBtn && modalContainer){
-     
-        openBtn.addEventListener('click', (e)=>{
-            e.preventDefault();
-            modalContainer.classList.add('show-modal')
-        })
-    }
-}
-showModal3('open-modal-3','modal-container-3')
-
-/* CLOSE MODAL 3 */
-const closeBtn3 = document.querySelectorAll('.close-modal')
-
-function closeModal3(){
-    const modalContainer = document.getElementById('modal-container-3')
-    modalContainer.classList.remove('show-modal')
-}
-closeBtn3.forEach(c => c.addEventListener('click', closeModal3))
-
-/*=============== SHOW MODAL 4 ===============*/
-const showModal4 = (openButton, modalContent) =>{
-    const openBtn = document.getElementById(openButton),
-    modalContainer = document.getElementById(modalContent)
-
-    if(openBtn && modalContainer){
-     
-        openBtn.addEventListener('click', (e)=>{
-            e.preventDefault();
-            modalContainer.classList.add('show-modal')
-        })
-    }
-}
-showModal4('open-modal-4','modal-container-4')
-
-/* CLOSE MODAL 4 */
-const closeBtn4 = document.querySelectorAll('.close-modal')
-
-function closeModal4(){
-    const modalContainer = document.getElementById('modal-container-4')
-    modalContainer.classList.remove('show-modal')
-}
-closeBtn4.forEach(c => c.addEventListener('click', closeModal4))
-
-
-/*=============== SHOW MODAL 5 ===============*/
-const showModal5 = (openButton, modalContent) =>{
-    const openBtn = document.getElementById(openButton),
-    modalContainer = document.getElementById(modalContent)
-
-    if(openBtn && modalContainer){
-     
-        openBtn.addEventListener('click', (e)=>{
-            e.preventDefault();
-            modalContainer.classList.add('show-modal')
-        })
-    }
-}
-showModal5('open-modal-5','modal-container-5')
-
-/* CLOSE MODAL 5 */
-const closeBtn5 = document.querySelectorAll('.close-modal')
-
-function closeModal5(){
-    const modalContainer = document.getElementById('modal-container-5')
-    modalContainer.classList.remove('show-modal')
-}
-closeBtn5.forEach(c => c.addEventListener('click', closeModal5))
 
 
 // mouseOver

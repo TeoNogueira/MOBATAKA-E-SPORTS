@@ -17,6 +17,9 @@
 
   --z-modal-md: 1000;
 }
+a:hover {
+cursor: pointer;
+}
 
 @media screen and (min-width: 968px) {
   :root {
@@ -189,6 +192,12 @@ p.quantity {
   background-size: cover;
 }
 
+.md-p-6 {
+ 
+  background: url('../img/prism_2.svg') left;
+  background-size: cover;
+}
+
 @media screen and (max-width: 768px){ 
 
 
@@ -217,10 +226,16 @@ p.quantity {
   
   .md-p-5 {
     top: 650px !important;
-    background: url('../img/prism_1.svg') bottom !important;
+    background: url('../img/prism_1.svg') top !important;
     background-size: cover;
   }
 
+
+  .md-p-6 {
+    bottom: 1020px !important;  
+    background: url('../img/prism_2.svg') left;
+    background-size: cover;
+  }
 }
 
 
