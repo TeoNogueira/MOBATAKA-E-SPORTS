@@ -109,6 +109,13 @@ p.quantity {
   top: 0.6rem;
   right: 0.6rem;
   cursor: pointer;
+  opacity: 0.4;
+}
+
+.modal__close:hover {
+
+  opacity: 1;
+  transition: 1s;
 }
 
 .modal__title{
@@ -132,7 +139,7 @@ p.quantity {
   width: 70px;
   height: 28px;
   border-radius: 0.4rem;
-  opacity: 0.8;
+  opacity: 0.4;
   background-color: #ccb;
   color: var(--first-color-md);
   font-weight: 500;
