@@ -35,9 +35,9 @@ button{
   font-size: var(--normal-font-size-md);
 }
 
-body{
+/* body{
   position: relative;
-}
+} */
 
 button{
   cursor: pointer;
@@ -53,7 +53,6 @@ iframe {
   border-radius: 0.4rem;
   align-items:center;
   width: 278px !important;
- 
   justify-content: center !important;
 }
 
@@ -86,7 +85,7 @@ visibility: hidden;
 
 }
 
-.modal__content{
+.modal__content {
   position: relative;
   background-color: var(--container-color-md);
   text-align: center;
@@ -96,6 +95,18 @@ visibility: hidden;
 
   /*=== Effect 1 ===*/
   transform: translateY(50%);
+}
+
+.modal__about {
+  position: relative;
+  background-color: var(--container-color-md);
+  text-align: center;
+  padding: 3rem 2rem 2rem;
+  border-radius: 0.2rem;
+  transition: all .6s;
+
+  /*=== Effect 1 ===*/
+  /* transform: translateY(50%); */
 }
 
 
@@ -164,8 +175,9 @@ p.quantity {
   /*=== Effect 1 ===*/
   transform: translateY(0);
 
- 
 }
+
+
 .md-p-1 {
  
   background: url('../img/prism_1.svg') left;
@@ -190,12 +202,14 @@ p.quantity {
  
   background: url('../img/prism_1.svg') left;
   background-size: cover;
+  
 }
 
 .md-p-6 {
- 
+  /* transform: translateY(0) !important; */
   background: url('../img/prism_2.svg') left;
   background-size: cover;
+  /* position: absolute; */
 }
 
 @media screen and (max-width: 768px){ 
@@ -228,14 +242,14 @@ p.quantity {
     top: 650px !important;
     background: url('../img/prism_1.svg') top !important;
     background-size: cover;
+   
   }
 
 
-  .md-p-6 {
-    bottom: 1020px !important;  
+   .md-p-6 {
     background: url('../img/prism_2.svg') left;
-    background-size: cover;
-  }
+    background-size: cover !important;
+  } 
 }
 
 
@@ -243,7 +257,12 @@ p.quantity {
   .modal__content{
     margin: auto;
     width: 300px;
-      
+  }
+
+  .modal__about{
+    margin: auto;
+    width: 300px;
+  }
 iframe {
   display: flex !important; 
   width: 100% !important;  
@@ -256,5 +275,5 @@ iframe {
   justify-content: center !important;
  
 }
-  }
+  
 }

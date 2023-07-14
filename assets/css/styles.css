@@ -42,6 +42,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 body {
@@ -50,6 +51,7 @@ body {
   background: var(--body-color);
   color: var(--text-color);
   transition: .3s; /* For animation dark mode */
+  /* position: relative; */
 }
 
 h1, h2, h3 {
@@ -558,3 +560,4 @@ body.dark-theme {
     margin: 4.5rem 0 2.5rem;
   }
 }
+
