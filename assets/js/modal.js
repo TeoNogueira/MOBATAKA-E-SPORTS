@@ -1,6 +1,7 @@
 // Modal
 
 const showModal = (openButtonId, modalContentId) => {
+  
     const openBtn = document.getElementById(openButtonId);
     const modalContainer = document.getElementById(modalContentId);
   
@@ -51,8 +52,8 @@ adminClan.addEventListener('mouseover', (e) => {
     })
 })
 
-async function mediaQr(e) {
-  e.preventDefault();
+ function mediaQr(e) {
+
 const aboutMe = document.querySelector('a#open-modal-6.button');
 const buttonFilter1 = document.querySelector('button[data-target="#skills"]');
 const buttonFilter2 = document.querySelector('button[data-target="#projects"]');
@@ -61,15 +62,16 @@ const buttonFilter2 = document.querySelector('button[data-target="#projects"]');
 let mdp = document.querySelector('.md-p-6');
 if(buttonFilter1 && window.matchMedia("(max-width: 768px)").matches) {
 
-aboutMe.addEventListener('click', (e) => {
 
-  e.preventDefault()
+aboutMe.addEventListener('click', (e) => {
+  e.preventDefault();
+ 
   mdp.style.bottom = '1200px';
 
   if(buttonFilter2 && window.matchMedia("(max-width: 768px)").matches) {
 
     aboutMe.addEventListener('click', (e) => {
-      e.preventDefault()
+      e.preventDefault();
     
       mdp.style.bottom = '20px';
        
