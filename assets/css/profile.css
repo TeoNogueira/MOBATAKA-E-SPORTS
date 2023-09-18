@@ -58,7 +58,7 @@
 
 .cd:hover {
     transform: scale(1.1);
-    filter: drop-shadow(10px 10px 8px #6654ff);
+    filter: drop-shadow(8px 8px #6654ff);
     
 }
 
